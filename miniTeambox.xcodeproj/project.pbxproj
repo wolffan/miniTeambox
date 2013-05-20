@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD8FB42A174A376A000984A7 /* RLFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8FB428174A376A000984A7 /* RLFLoginViewController.m */; };
+		CD8FB42B174A376A000984A7 /* RLFLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD8FB429174A376A000984A7 /* RLFLoginViewController.xib */; };
+		CD8FB42F174A4595000984A7 /* RLFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8FB42D174A4595000984A7 /* RLFTableViewController.m */; };
+		CD8FB430174A4595000984A7 /* RLFTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD8FB42E174A4595000984A7 /* RLFTableViewController.xib */; };
+		CDD00713174AC62800E986A5 /* RLFAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD00712174AC62800E986A5 /* RLFAPI.m */; };
+		CDD764591740001E00206BA3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD764581740001E00206BA3 /* UIKit.framework */; };
+		CDD7645B1740001E00206BA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD7645A1740001E00206BA3 /* Foundation.framework */; };
+		CDD7645D1740001E00206BA3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD7645C1740001E00206BA3 /* CoreGraphics.framework */; };
+		CDD764631740001E00206BA3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDD764611740001E00206BA3 /* InfoPlist.strings */; };
+		CDD764651740001E00206BA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD764641740001E00206BA3 /* main.m */; };
+		CDD764691740001E00206BA3 /* RLFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD764681740001E00206BA3 /* RLFAppDelegate.m */; };
+		CDD7646B1740001E00206BA3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD7646A1740001E00206BA3 /* Default.png */; };
+		CDD7646D1740001E00206BA3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD7646C1740001E00206BA3 /* Default@2x.png */; };
+		CDD7646F1740001E00206BA3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD7646E1740001E00206BA3 /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD8FB427174A376A000984A7 /* RLFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLFLoginViewController.h; sourceTree = "<group>"; };
+		CD8FB428174A376A000984A7 /* RLFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLFLoginViewController.m; sourceTree = "<group>"; };
+		CD8FB429174A376A000984A7 /* RLFLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLFLoginViewController.xib; sourceTree = "<group>"; };
+		CD8FB42C174A4594000984A7 /* RLFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RLFTableViewController.h; path = ../RLFTableViewController.h; sourceTree = "<group>"; };
+		CD8FB42D174A4595000984A7 /* RLFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RLFTableViewController.m; path = ../RLFTableViewController.m; sourceTree = "<group>"; };
+		CD8FB42E174A4595000984A7 /* RLFTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RLFTableViewController.xib; path = ../RLFTableViewController.xib; sourceTree = "<group>"; };
+		CDD00711174AC62800E986A5 /* RLFAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLFAPI.h; sourceTree = "<group>"; };
+		CDD00712174AC62800E986A5 /* RLFAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLFAPI.m; sourceTree = "<group>"; };
+		CDD764551740001E00206BA3 /* miniTeambox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = miniTeambox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDD764581740001E00206BA3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CDD7645A1740001E00206BA3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CDD7645C1740001E00206BA3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CDD764601740001E00206BA3 /* miniTeambox-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "miniTeambox-Info.plist"; sourceTree = "<group>"; };
+		CDD764621740001E00206BA3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CDD764641740001E00206BA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CDD764661740001E00206BA3 /* miniTeambox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "miniTeambox-Prefix.pch"; sourceTree = "<group>"; };
+		CDD764671740001E00206BA3 /* RLFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLFAppDelegate.h; sourceTree = "<group>"; };
+		CDD764681740001E00206BA3 /* RLFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLFAppDelegate.m; sourceTree = "<group>"; };
+		CDD7646A1740001E00206BA3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CDD7646C1740001E00206BA3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CDD7646E1740001E00206BA3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDD764521740001E00206BA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDD764591740001E00206BA3 /* UIKit.framework in Frameworks */,
+				CDD7645B1740001E00206BA3 /* Foundation.framework in Frameworks */,
+				CDD7645D1740001E00206BA3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDD7644C1740001D00206BA3 = {
+			isa = PBXGroup;
+			children = (
+				CDD00711174AC62800E986A5 /* RLFAPI.h */,
+				CDD00712174AC62800E986A5 /* RLFAPI.m */,
+				CDD7645E1740001E00206BA3 /* miniTeambox */,
+				CDD764571740001E00206BA3 /* Frameworks */,
+				CDD764561740001E00206BA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDD764561740001E00206BA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDD764551740001E00206BA3 /* miniTeambox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDD764571740001E00206BA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDD764581740001E00206BA3 /* UIKit.framework */,
+				CDD7645A1740001E00206BA3 /* Foundation.framework */,
+				CDD7645C1740001E00206BA3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDD7645E1740001E00206BA3 /* miniTeambox */ = {
+			isa = PBXGroup;
+			children = (
+				CDD764671740001E00206BA3 /* RLFAppDelegate.h */,
+				CDD764681740001E00206BA3 /* RLFAppDelegate.m */,
+				CD8FB427174A376A000984A7 /* RLFLoginViewController.h */,
+				CD8FB428174A376A000984A7 /* RLFLoginViewController.m */,
+				CD8FB429174A376A000984A7 /* RLFLoginViewController.xib */,
+				CD8FB42C174A4594000984A7 /* RLFTableViewController.h */,
+				CD8FB42D174A4595000984A7 /* RLFTableViewController.m */,
+				CD8FB42E174A4595000984A7 /* RLFTableViewController.xib */,
+				CDD7645F1740001E00206BA3 /* Supporting Files */,
+			);
+			path = miniTeambox;
+			sourceTree = "<group>";
+		};
+		CDD7645F1740001E00206BA3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDD764601740001E00206BA3 /* miniTeambox-Info.plist */,
+				CDD764611740001E00206BA3 /* InfoPlist.strings */,
+				CDD764641740001E00206BA3 /* main.m */,
+				CDD764661740001E00206BA3 /* miniTeambox-Prefix.pch */,
+				CDD7646A1740001E00206BA3 /* Default.png */,
+				CDD7646C1740001E00206BA3 /* Default@2x.png */,
+				CDD7646E1740001E00206BA3 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDD764541740001E00206BA3 /* miniTeambox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDD764781740001E00206BA3 /* Build configuration list for PBXNativeTarget "miniTeambox" */;
+			buildPhases = (
+				CDD764511740001E00206BA3 /* Sources */,
+				CDD764521740001E00206BA3 /* Frameworks */,
+				CDD764531740001E00206BA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = miniTeambox;
+			productName = miniTeambox;
+			productReference = CDD764551740001E00206BA3 /* miniTeambox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDD7644D1740001D00206BA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RLF;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = RaimonLapuente;
+			};
+			buildConfigurationList = CDD764501740001D00206BA3 /* Build configuration list for PBXProject "miniTeambox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CDD7644C1740001D00206BA3;
+			productRefGroup = CDD764561740001E00206BA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDD764541740001E00206BA3 /* miniTeambox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDD764531740001E00206BA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDD764631740001E00206BA3 /* InfoPlist.strings in Resources */,
+				CDD7646B1740001E00206BA3 /* Default.png in Resources */,
+				CDD7646D1740001E00206BA3 /* Default@2x.png in Resources */,
+				CDD7646F1740001E00206BA3 /* Default-568h@2x.png in Resources */,
+				CD8FB42B174A376A000984A7 /* RLFLoginViewController.xib in Resources */,
+				CD8FB430174A4595000984A7 /* RLFTableViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDD764511740001E00206BA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDD764651740001E00206BA3 /* main.m in Sources */,
+				CDD764691740001E00206BA3 /* RLFAppDelegate.m in Sources */,
+				CD8FB42A174A376A000984A7 /* RLFLoginViewController.m in Sources */,
+				CD8FB42F174A4595000984A7 /* RLFTableViewController.m in Sources */,
+				CDD00713174AC62800E986A5 /* RLFAPI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CDD764611740001E00206BA3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDD764621740001E00206BA3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDD764761740001E00206BA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CDD764771740001E00206BA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDD764791740001E00206BA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "miniTeambox/miniTeambox-Prefix.pch";
+				INFOPLIST_FILE = "miniTeambox/miniTeambox-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CDD7647A1740001E00206BA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "miniTeambox/miniTeambox-Prefix.pch";
+				INFOPLIST_FILE = "miniTeambox/miniTeambox-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDD764501740001D00206BA3 /* Build configuration list for PBXProject "miniTeambox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDD764761740001E00206BA3 /* Debug */,
+				CDD764771740001E00206BA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDD764781740001E00206BA3 /* Build configuration list for PBXNativeTarget "miniTeambox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDD764791740001E00206BA3 /* Debug */,
+				CDD7647A1740001E00206BA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDD7644D1740001D00206BA3 /* Project object */;
+}
