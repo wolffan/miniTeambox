@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class RLFTimeViewController;
+
 @interface RLFTableViewController : UIViewController <UITableViewDelegate,UITableViewDelegate,UISearchBarDelegate>
 
+- (IBAction)time:(id)sender;
 @property (weak, nonatomic) IBOutlet UISearchBar *search;
 @property (weak, nonatomic) IBOutlet UITableView *mainTable;
+@property RLFTimeViewController *time;
 
 @end

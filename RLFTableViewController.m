@@ -8,6 +8,7 @@
 
 #import "RLFTableViewController.h"
 #import "RLFAPI.h"
+#import "RLFTimeViewController.h"
 
 @interface RLFTableViewController ()
 
@@ -45,11 +46,15 @@
 
 - (void) viewWillAppear:(BOOL)animated
 {
-    //we create a new view with the objects
-    RLFAPI *api = [[RLFAPI alloc] init];
-    NSDictionary *dict = [api getTasks];
-    task_list = [dict objectForKey:@"objects"];
-    [self.mainTable reloadData];
+    //we create a new view with the objects or we filter results by Date (if we come back from time view)
+    if (isFiltered) {
+        [self filterByDate];
+    } else {
+        RLFAPI *api = [[RLFAPI alloc] init];
+        NSDictionary *dict = [api getTasks];
+        task_list = [dict objectForKey:@"objects"];
+        [self.mainTable reloadData];
+    }
 }
 
 #pragma mark - Table Delegate methods
@@ -95,6 +100,7 @@
 
 #pragma mark - searchBar
 
+//Filter task table by name
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {
     if (searchText.length == 0) {
@@ -109,6 +115,35 @@
             if (nameRange.location != NSNotFound) {
                 [filtered_list addObject:elem];
             }
+        }
+    }
+    [self.mainTable reloadData];
+}
+
+- (void)viewDidUnload {
+    [super viewDidUnload];
+}
+
+//Present Modal view for time choosing
+- (IBAction)time:(id)sender {
+    self.time = [[RLFTimeViewController alloc] init];
+    isFiltered = YES;
+    [[self navigationController] presentModalViewController:self.time animated:YES];
+}
+
+/* Filter the results from the table by start date and end date provided by the time modal view
+ */
+- (void) filterByDate
+{
+    isFiltered = YES;
+    NSDateFormatter *format = [[NSDateFormatter alloc] init];
+    [format setDateFormat:@"yyyy-MM-dd"];
+    filtered_list = [[NSMutableArray alloc] init];
+    for (NSDictionary *elem in task_list) {
+        NSArray *split = [[elem objectForKey:@"updated_at"]  componentsSeparatedByString:@" "];
+        NSDate *current = [format dateFromString:[split objectAtIndex:0]];
+        if ([current compare:self.time.from.date] == NSOrderedDescending && [current compare:self.time.to.date] == NSOrderedAscending) {
+            [filtered_list addObject:elem];
         }
     }
     [self.mainTable reloadData];

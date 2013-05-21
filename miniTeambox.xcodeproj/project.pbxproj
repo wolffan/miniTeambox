@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD4FEA59174C2242004FD750 /* RLFTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4FEA57174C2242004FD750 /* RLFTimeViewController.m */; };
+		CD4FEA5A174C2242004FD750 /* RLFTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD4FEA58174C2242004FD750 /* RLFTimeViewController.xib */; };
 		CD8FB42A174A376A000984A7 /* RLFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8FB428174A376A000984A7 /* RLFLoginViewController.m */; };
 		CD8FB42B174A376A000984A7 /* RLFLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD8FB429174A376A000984A7 /* RLFLoginViewController.xib */; };
 		CD8FB42F174A4595000984A7 /* RLFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8FB42D174A4595000984A7 /* RLFTableViewController.m */; };
@@ -24,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD4FEA56174C2242004FD750 /* RLFTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLFTimeViewController.h; sourceTree = "<group>"; };
+		CD4FEA57174C2242004FD750 /* RLFTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLFTimeViewController.m; sourceTree = "<group>"; };
+		CD4FEA58174C2242004FD750 /* RLFTimeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLFTimeViewController.xib; sourceTree = "<group>"; };
 		CD8FB427174A376A000984A7 /* RLFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLFLoginViewController.h; sourceTree = "<group>"; };
 		CD8FB428174A376A000984A7 /* RLFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLFLoginViewController.m; sourceTree = "<group>"; };
 		CD8FB429174A376A000984A7 /* RLFLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLFLoginViewController.xib; sourceTree = "<group>"; };
@@ -101,6 +106,9 @@
 				CD8FB42C174A4594000984A7 /* RLFTableViewController.h */,
 				CD8FB42D174A4595000984A7 /* RLFTableViewController.m */,
 				CD8FB42E174A4595000984A7 /* RLFTableViewController.xib */,
+				CD4FEA56174C2242004FD750 /* RLFTimeViewController.h */,
+				CD4FEA57174C2242004FD750 /* RLFTimeViewController.m */,
+				CD4FEA58174C2242004FD750 /* RLFTimeViewController.xib */,
 				CDD7645F1740001E00206BA3 /* Supporting Files */,
 			);
 			path = miniTeambox;
@@ -178,6 +186,7 @@
 				CDD7646F1740001E00206BA3 /* Default-568h@2x.png in Resources */,
 				CD8FB42B174A376A000984A7 /* RLFLoginViewController.xib in Resources */,
 				CD8FB430174A4595000984A7 /* RLFTableViewController.xib in Resources */,
+				CD4FEA5A174C2242004FD750 /* RLFTimeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +202,7 @@
 				CD8FB42A174A376A000984A7 /* RLFLoginViewController.m in Sources */,
 				CD8FB42F174A4595000984A7 /* RLFTableViewController.m in Sources */,
 				CDD00713174AC62800E986A5 /* RLFAPI.m in Sources */,
+				CD4FEA59174C2242004FD750 /* RLFTimeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
