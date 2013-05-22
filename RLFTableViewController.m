@@ -49,6 +49,7 @@
     //we create a new view with the objects or we filter results by Date (if we come back from time view)
     if (isFiltered) {
         [self filterByDate];
+        [self.search resignFirstResponder];
     } else {
         RLFAPI *api = [[RLFAPI alloc] init];
         NSDictionary *dict = [api getTasks];
