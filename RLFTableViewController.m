@@ -9,6 +9,7 @@
 #import "RLFTableViewController.h"
 #import "RLFAPI.h"
 #import "RLFTimeViewController.h"
+#import "RLFCell.h"
 
 @interface RLFTableViewController ()
 
@@ -36,6 +37,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    //Load Custom Cell
+    UINib *nib = [UINib nibWithNibName:@"RLFCell" bundle:nil];
+    //register the nib with a cell identifier
+    [[self mainTable] registerNib:nib forCellReuseIdentifier:@"RLFCell"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,6 +62,24 @@
         task_list = [dict objectForKey:@"objects"];
         [self.mainTable reloadData];
     }
+    
+    UIRefreshControl *refreshControl = [UIRefreshControl new];
+    [refreshControl setTintColor:[UIColor grayColor]];
+    [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
+    refreshControl.attributedTitle = [[NSMutableAttributedString alloc] initWithString:@"Reloading ..."];
+    [self.mainTable addSubview:refreshControl];
+    
+    [self.mainTable setBackgroundColor:[UIColor clearColor]];
+}
+
+- (void) refresh: (UIRefreshControl *) sender
+{
+    [sender beginRefreshing];
+    RLFAPI *api = [[RLFAPI alloc] init];
+    NSDictionary *dict = [api getTasks];
+    task_list = [dict objectForKey:@"objects"];
+    //[self.mainTable reloadData];
+    [sender endRefreshing];
 }
 
 #pragma mark - Table Delegate methods
@@ -72,23 +96,25 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell;
+    RLFCell *cell;
     static NSString *identifier = @"listCell";
     
-    cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
+    cell = (RLFCell *)[tableView dequeueReusableCellWithIdentifier:identifier];
+    if (cell == nil) {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"RLFCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
     }
+    
     NSDictionary *task;
     if (isFiltered) {
         task = [filtered_list objectAtIndex:indexPath.row];
     } else {
         task = [task_list objectAtIndex:indexPath.row];
     }
-    cell.textLabel.text = [task objectForKey:@"name"];
-    cell.detailTextLabel.text = [task objectForKey:@"updated_at"];
-    cell.contentView.backgroundColor = [UIColor whiteColor];
+    cell.name.text = [task objectForKey:@"name"];
+    cell.date.text = [task objectForKey:@"updated_at"];
+    cell.contentView.backgroundColor = [UIColor clearColor];
+    cell.chats.text = [NSString stringWithFormat:@"%@",[task objectForKey:@"comments_count"]];
     
     return cell;
 }
@@ -96,7 +122,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 50;
+    return 60;
 }
 
 #pragma mark - searchBar
@@ -150,4 +176,8 @@
     [self.mainTable reloadData];
 }
 
+- (IBAction)resetData:(id)sender {
+    isFiltered = NO;
+    [self.mainTable reloadData];
+}
 @end

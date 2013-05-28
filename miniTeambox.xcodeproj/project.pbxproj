@@ -23,6 +23,10 @@
 		CDD7646B1740001E00206BA3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD7646A1740001E00206BA3 /* Default.png */; };
 		CDD7646D1740001E00206BA3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD7646C1740001E00206BA3 /* Default@2x.png */; };
 		CDD7646F1740001E00206BA3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD7646E1740001E00206BA3 /* Default-568h@2x.png */; };
+		CDE2D7451753401E003F86C2 /* wood_pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE2D7441753401E003F86C2 /* wood_pattern.png */; };
+		CDE2D74A17548C93003F86C2 /* RLFCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE2D74917548C93003F86C2 /* RLFCell.m */; };
+		CDE2D751175491B4003F86C2 /* RLFCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE2D750175491B4003F86C2 /* RLFCell.xib */; };
+		CDE2D75317554EA9003F86C2 /* write.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE2D75217554EA9003F86C2 /* write.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,11 @@
 		CDD7646A1740001E00206BA3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CDD7646C1740001E00206BA3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CDD7646E1740001E00206BA3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CDE2D7441753401E003F86C2 /* wood_pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wood_pattern.png; sourceTree = "<group>"; };
+		CDE2D74817548C93003F86C2 /* RLFCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLFCell.h; sourceTree = "<group>"; };
+		CDE2D74917548C93003F86C2 /* RLFCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLFCell.m; sourceTree = "<group>"; };
+		CDE2D750175491B4003F86C2 /* RLFCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLFCell.xib; sourceTree = "<group>"; };
+		CDE2D75217554EA9003F86C2 /* write.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = write.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +81,7 @@
 				CDD00711174AC62800E986A5 /* RLFAPI.h */,
 				CDD00712174AC62800E986A5 /* RLFAPI.m */,
 				CDD7645E1740001E00206BA3 /* miniTeambox */,
+				CDE2D74317534007003F86C2 /* Images */,
 				CDD764571740001E00206BA3 /* Frameworks */,
 				CDD764561740001E00206BA3 /* Products */,
 			);
@@ -109,7 +119,9 @@
 				CD4FEA56174C2242004FD750 /* RLFTimeViewController.h */,
 				CD4FEA57174C2242004FD750 /* RLFTimeViewController.m */,
 				CD4FEA58174C2242004FD750 /* RLFTimeViewController.xib */,
+				CDE2D750175491B4003F86C2 /* RLFCell.xib */,
 				CDD7645F1740001E00206BA3 /* Supporting Files */,
+				CDE2D74B17548C9A003F86C2 /* Cell */,
 			);
 			path = miniTeambox;
 			sourceTree = "<group>";
@@ -126,6 +138,25 @@
 				CDD7646E1740001E00206BA3 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDE2D74317534007003F86C2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CDE2D75217554EA9003F86C2 /* write.png */,
+				CDE2D7441753401E003F86C2 /* wood_pattern.png */,
+			);
+			name = Images;
+			path = miniTeambox;
+			sourceTree = "<group>";
+		};
+		CDE2D74B17548C9A003F86C2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CDE2D74917548C93003F86C2 /* RLFCell.m */,
+				CDE2D74817548C93003F86C2 /* RLFCell.h */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +218,9 @@
 				CD8FB42B174A376A000984A7 /* RLFLoginViewController.xib in Resources */,
 				CD8FB430174A4595000984A7 /* RLFTableViewController.xib in Resources */,
 				CD4FEA5A174C2242004FD750 /* RLFTimeViewController.xib in Resources */,
+				CDE2D7451753401E003F86C2 /* wood_pattern.png in Resources */,
+				CDE2D751175491B4003F86C2 /* RLFCell.xib in Resources */,
+				CDE2D75317554EA9003F86C2 /* write.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +237,7 @@
 				CD8FB42F174A4595000984A7 /* RLFTableViewController.m in Sources */,
 				CDD00713174AC62800E986A5 /* RLFAPI.m in Sources */,
 				CD4FEA59174C2242004FD750 /* RLFTimeViewController.m in Sources */,
+				CDE2D74A17548C93003F86C2 /* RLFCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

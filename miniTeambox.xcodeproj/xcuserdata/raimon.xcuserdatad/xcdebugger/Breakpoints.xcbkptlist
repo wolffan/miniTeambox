@@ -47,11 +47,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "RLFTableViewController.m"
-         timestampString = "390898069.060581"
+         timestampString = "391469441.93849"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "143"
-         endingLineNumber = "143"
+         startingLineNumber = "169"
+         endingLineNumber = "169"
          landmarkName = "-filterByDate"
          landmarkType = "5">
       </FileBreakpoint>
@@ -60,11 +60,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "RLFTableViewController.m"
-         timestampString = "390898069.060581"
+         timestampString = "391469441.93849"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "144"
-         endingLineNumber = "144"
+         startingLineNumber = "170"
+         endingLineNumber = "170"
          landmarkName = "-filterByDate"
          landmarkType = "5">
       </FileBreakpoint>
@@ -73,12 +73,38 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "RLFTableViewController.m"
-         timestampString = "390898069.060581"
+         timestampString = "391469441.93849"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "145"
-         endingLineNumber = "145"
+         startingLineNumber = "171"
+         endingLineNumber = "171"
          landmarkName = "-filterByDate"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "RLFTableViewController.m"
+         timestampString = "391469441.93849"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "114"
+         endingLineNumber = "114"
+         landmarkName = "-tableView:cellForRowAtIndexPath:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "RLFTableViewController.m"
+         timestampString = "391469441.93849"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "77"
+         endingLineNumber = "77"
+         landmarkName = "-refresh:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

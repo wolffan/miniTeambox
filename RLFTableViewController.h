@@ -16,5 +16,6 @@
 @property (weak, nonatomic) IBOutlet UISearchBar *search;
 @property (weak, nonatomic) IBOutlet UITableView *mainTable;
 @property RLFTimeViewController *time;
+- (IBAction)resetData:(id)sender;
 
 @end

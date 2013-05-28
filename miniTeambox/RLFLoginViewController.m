@@ -53,6 +53,7 @@
     if ([[[request URL] absoluteString] isEqualToString:@"https://teambox.com/#!/"]) {
         //create the view
         RLFTableViewController *table = [[RLFTableViewController alloc] init];
+        table.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"wood_pattern.png"]];
         [self.navigationController pushViewController:table animated:NO];
         
         
